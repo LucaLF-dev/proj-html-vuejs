@@ -103,10 +103,15 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 <style lang="scss" scoped>
 
 .main__header {
-  position: sticky;
-  backdrop-filter: blur(10px);
-  background-color: rgba(24, 24, 187, 0.606);
-  min-width: 100vw;
+  width: 100%;
+	height: 155px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 999;
+	margin: 0;
+  backdrop-filter: blur(5px);
 }
 
 .nav__contacts {
