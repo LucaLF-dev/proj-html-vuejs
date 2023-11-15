@@ -11,7 +11,7 @@ import FooterPage from './components/FooterPage.vue';
     },
     data() {
        return {
-
+        
        };
     },
   }
@@ -29,6 +29,7 @@ import FooterPage from './components/FooterPage.vue';
 
 <style lang="scss">
 @use "./style/general.scss";
+
 
 
 </style>

@@ -1,7 +1,18 @@
 
+$rose-color:#FF0052;
+$section-background-color:#131661;
+$white-color:#FFFFFF;
+$star-back-color:#00B67A;
+$black-color:#000000;
+$card-color:#232A5C;
+
 body, html {
-    font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+#app {
+    height: 100vh;
 }
 
 * {
@@ -32,4 +43,51 @@ figure  {
         display: block;
         width: 100%;
     }
+}
+
+.container-max {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  width: 95px;
+  height: 54px;
+
+  &.white {
+    background-color: $white-color;
+    color: $rose-color;
+    border-bottom: 1px solid $rose-color;
+  }
+
+  &.rose {
+    background-color: $rose-color;
+    color: $white-color;
+    border-bottom: 1px solid $white-color;
+  }
+}
+
+.button-big{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   display: block;
+   width:204px;
+   height:60px;
+
+   &.white {
+    background-color: $white-color;
+    color: $rose-color;
+    border-bottom: 1px solid $rose-color;
+  }
+
 }
