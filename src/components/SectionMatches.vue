@@ -14,7 +14,7 @@ export default {
 					group: "2 group",
 					numberPlayers: "32 players",
 					prizePool: "$3200",
-					nameTournament: "Battlefield-4 tournament",
+					nameTournament: "call of duty tournament",
 					pointsHome: "",
 					pointsAway: "",
 					date: "30 april 2022",
@@ -22,18 +22,17 @@ export default {
 					posterHomeTeam: "public/teamsm-6.png",
 					posterAwayTeam: "public/teamsm-9.png",
 					streams: [
-						{
-							Platform1: "public/social-1.png",
-							Platform2: "public/social-2.png",
-							Platform3: "public/social-3.png",
-						},
+						{ platform: "public/social-1.png"},
+						{platform: "public/social-2.png"},
+						{platform: "public/social-3.png"},
+
 					],
 				},
 				{
 					group: "2 group",
 					numberPlayers: "32 players",
 					prizePool: "$3200",
-					nameTournament: "Battlefield-4 tournament",
+					nameTournament: "league battle tournament",
 					pointsHome: "",
 					pointsAway: "",
 					date: "30 april 2022",
@@ -41,18 +40,17 @@ export default {
 					posterHomeTeam: "public/teamsm-6.png",
 					posterAwayTeam: "public/teamsm-9.png",
 					streams: [
-						{
-							Platform1: "public/social-1.png",
-							Platform2: "public/social-2.png",
-							Platform3: "public/social-3.png",
-						},
+						{ platform: "public/social-1.png"},
+						{platform: "public/social-2.png"},
+						{platform: "public/social-3.png"},
+
 					],
 				},
 				{
 					group: "2 group",
 					numberPlayers: "32 players",
 					prizePool: "$3200",
-					nameTournament: "Battlefield-4 tournament",
+					nameTournament: "pubg classic tournament",
 					pointsHome: "",
 					pointsAway: "",
 					date: "30 april 2022",
@@ -60,11 +58,10 @@ export default {
 					posterHomeTeam: "public/teamsm-6.png",
 					posterAwayTeam: "public/teamsm-9.png",
 					streams: [
-						{
-							Platform1: "public/social-1.png",
-							Platform2: "public/social-2.png",
-							Platform3: "public/social-3.png",
-						},
+						{ platform: "public/social-1.png"},
+						{platform: "public/social-2.png"},
+						{platform: "public/social-3.png"},
+
 					],
 				},
 			],
@@ -81,11 +78,10 @@ export default {
 					posterHomeTeam: "public/teamsm-6.png",
 					posterAwayTeam: "public/teamsm-9.png",
 					streams: [
-						{
-							Platform1: "public/social-1.png",
-							Platform2: "public/social-2.png",
-							Platform3: "public/social-3.png",
-						},
+						{ platform: "public/social-1.png"},
+						{platform: "public/social-2.png"},
+						{platform: "public/social-3.png"},
+
 					],
 				},
 				{
@@ -100,18 +96,17 @@ export default {
 					posterHomeTeam: "public/teamsm-6.png",
 					posterAwayTeam: "public/teamsm-9.png",
 					streams: [
-						{
-							Platform1: "public/social-1.png",
-							Platform2: "public/social-2.png",
-							Platform3: "public/social-3.png",
-						},
+						{ platform: "public/social-1.png"},
+						{platform: "public/social-2.png"},
+						{platform: "public/social-3.png"},
+
 					],
 				},
 				{
 					group: "2 group",
 					numberPlayers: "32 players",
 					prizePool: "$3200",
-					nameTournament: " ",
+					nameTournament: "",
 					pointsHome: "3",
 					pointsAway: "4",
 					date: "30 april 2022",
@@ -119,11 +114,10 @@ export default {
 					posterHomeTeam: "public/teamsm-6.png",
 					posterAwayTeam: "public/teamsm-9.png",
 					streams: [
-						{
-							Platform1: "public/social-1.png",
-							Platform2: "public/social-2.png",
-							Platform3: "public/social-3.png",
-						},
+						{ platform: "public/social-1.png"},
+						{platform: "public/social-2.png"},
+						{platform: "public/social-3.png"},
+
 					],
 				},
 			],
@@ -146,12 +140,13 @@ export default {
 				</div>
 
 				<div class="row matches-insight">
+					
 					<div class="col upcoming-matches">
 						<h3>upcoming Matches</h3>
 						<div class="insight__body">
 							<CardMatchesSmall
-								v-for="cardMatch in upcomingMatches"
-								:item="cardMatch"
+								v-for="match in upcomingMatches"
+								:item="match"
 							/>
 						</div>
 					</div>
@@ -159,14 +154,12 @@ export default {
 						<h3>previous matches</h3>
 						<div class="insight__body">
 							<CardMatchesSmall
-								v-for="cardMatch in previousMatches"
-								:item="cardMatch"
+								v-for="match in previousMatches"
+								:item="match"
 							/>
 						</div>
 					</div>
-					
 				</div>
-				
 			</div>
 		</div>
 	</section>
@@ -174,13 +167,13 @@ export default {
 
 <style lang="scss" scoped>
 .matches__section {
-background-image: url("../assets/sectionMatches.jpg");
+	padding: 60px 0;
+	background-image: url("../assets/sectionMatches.jpg");
 	height: 1040px;
+	width: 100%;
 }
 
-.container {
-	padding: 60px;
-}
+
 .matches__big-preview {
 	display: flex;
 	flex-direction: column;
@@ -190,20 +183,28 @@ background-image: url("../assets/sectionMatches.jpg");
 
 	.preview__header {
 		text-align: center;
+		
+		
 
 		h2 {
 			font-size: 36px;
 			text-transform: uppercase;
+			padding-bottom: 30px;
 		}
 
 		h4 {
 			text-transform: uppercase;
 			color: #6f1951;
+			padding-bottom: 30px;
 		}
 	}
 }
 
 .matches-insight {
+	justify-content: space-between;
+	flex-direction: row;
+	
+	
 
 	h3 {
 		text-transform: uppercase;
@@ -217,6 +218,4 @@ background-image: url("../assets/sectionMatches.jpg");
 		justify-content: space-around;
 	}
 }
-
-
 </style>

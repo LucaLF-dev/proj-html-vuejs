@@ -24,8 +24,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partial/variables" as *;
 .main__content {
 	min-width: 100%;
 	min-height: calc(100vh - 150px);
+	color: white;
 }
 </style>

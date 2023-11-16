@@ -31,17 +31,18 @@ export default {
 			</div>
 			<div class="col matches__info">
 				<div>
-					<div v-if="item.nameTournament !== undefined" class="info__events">
+					<div v-if="item.nameTournament !== ''" class="info__events">
 						<h6>{{ item.nameTournament }}</h6>
 					</div>
-
 					<div v-else class="events__result">
 						<div>
-							<span>{{ item.pointsHome }}</span>
+							<p><span>{{ item.pointsHome }}</span>
 							<span> - </span>
 							<span>{{ item.pointsAway }}</span>
+                        </p>
 						</div>
 					</div>
+                
 				</div>
 				<div class="events__reminder">
 					<span class="date__event">
@@ -52,7 +53,7 @@ export default {
 				<div class="match__streaming">
 					<ul>
 						<li v-for="stream in item.streams">
-							<a href="#"><img :src="stream" alt="" /></a>
+							<a href="#"><img :src="stream.platform" alt="" /></a>
 						</li>
 					</ul>
 				</div>
@@ -67,17 +68,58 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partial/variables" as *;
 .card__matches-small {
-	width: 542px;
-	height: 209px;
+    width: 542px;
+	max-width: 542px;
+
+    
+    
 
 	.card__header {
-		background-color: #ff0052;
+		background-color:$rose-color;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+
+        p, span {
+           text-transform: uppercase;
+           font-size: 18px;
+
+        }
 	}
 
 	.card__body {
-		background-color: white;
+        justify-content: space-around;
+      flex-grow: 1;
+        padding: 10px;
+       
+		background-color:$white-color;
 		color: black;
+        text-align: center;
+
+        .matches__info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .info__events {
+
+            h6 {
+                text-transform: uppercase;
+                font-size: 15px;
+            }
+        }
+        .match__streaming {
+            
+           ul {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            
+        }
+        }
 	}
 }
 </style>

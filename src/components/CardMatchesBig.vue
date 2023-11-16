@@ -2,7 +2,7 @@
 export default {
 	data() {
 		return {
-			cardBig: [
+			cardBig:
 				{
 					group: "2 group",
 					numberPlayers: "32 players",
@@ -13,11 +13,13 @@ export default {
 					time: " 08:30PM",
 					posterHomeTeam: "public/teamsm-6.png",
 					posterAwayTeam: "public/teamsm-9.png",
-					streamPlatform1: "public/social-1.png",
-					streamPlatform2: "public/social-2.png",
-					streamPlatform3: "public/social-3.png",
+					streams: [
+						{ platform: "public/social-1.png"},
+						{platform: "public/social-2.png"},
+						{platform: "public/social-3.png"},
+
+					],
 				},
-			],
 		};
 	},
 };
@@ -26,41 +28,36 @@ export default {
 <template>
 	<div class="card__matches-big">
 		<div class="row card__header">
-			<p class="col group__matches">
-				<span>{{cardBig.group  }}</span>
-				<span>{{  }}fff</span>
-			</p>
-			<p class="col matches__price-money">Price pool <span>{{ }}</span></p>
+			<div class="col group__matches">
+				<span>{{cardBig.group}}</span>
+				<span>{{cardBig.numberPlayers  }}</span>
+        </div>
+			<p class="col matches__price-money">Price pool <span>{{cardBig.prizePool }}</span></p>
 		</div>
 
 		<div class="row card__body">
 			<div class="col matches__info">
 				<div class="info__events">
-					<h6>{{  }}</h6>
+					<h6>{{ cardBig.nameTournament }}</h6>
 				</div>
 
-				<div class="events__result">
-					<div>
-						<span></span>
-						<span> - </span>
-						<span></span>
-					</div>
-				</div>
+			
+				     
 				<div>
-					<span class="date__event">{{}}</span>
-					<span class="time__event">{{}}</span>
+					<span class="date__event">{{cardBig.date}}</span>
+					<span class="time__event">{{cardBig.time}}</span>
 				</div>
 			</div>
 			<div class="col teams__posters">
-				<img src="" alt="">
+				<img :src="cardBig.posterHomeTeam" alt="">
                 <img src="/public/vs.png" alt="">
-                <img src="" alt="">
+                <img :src="cardBig.posterAwayTeam" alt="">
 			</div>
 			<div class="match__streaming">
-				<ul>
-					<li><img src="" alt="" /></li>
+				<ul >
+					<li v-for="stream in cardBig.streams"><img :src="stream.platform" alt="" /></li>
 					<li>
-						<a class="button-big white" href=""><span></span></a>
+						<a class="button-big rose" href=""><span>whatch now</span></a>
 					</li>
 				</ul>
 			</div>
@@ -69,19 +66,55 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
 .card__matches-big {
 	width: 1132px;
 	height: 206px;
+    color: black;
 
 	.card__header {
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
 		background-color: #ff0052;
+
+        span,p {
+            text-transform: uppercase;
+            color: white;
+        }
 	}
 
 	.card__body {
+        padding: 10px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
 		background-color: white;
         color: black;
+
+        .info__events {
+
+            h6 {
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+
+        .teams__posters {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .match__streaming {
+
+            ul {
+                gap: 10px;
+                display: flex;
+                align-items: center;
+            }
+        }
 	}
 }
 </style>
