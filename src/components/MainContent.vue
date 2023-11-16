@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 .main__content {
-	width: 100%;
+	min-width: 100%;
 	min-height: calc(100vh - 150px);
 }
 </style>

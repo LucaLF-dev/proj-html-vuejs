@@ -46,7 +46,7 @@ export default {
 		<div class="container">
 			<div class="section__wrapper-collection">
 				<div class="section__title">
-					<h3>Today's</h3>
+					<h4>Today's</h4>
 					<h2 class="title__game-collection">our game collection</h2>
 				</div>
 				<div class="cards__team-wrapper">
@@ -73,7 +73,7 @@ export default {
 
 				<div class="card team-easports">
 					<div class="card__intro">
-						<h3 class="">Who we are</h3>
+						<h4 class="">Who we are</h4>
 						<h2 class="card__title">we are professional team esport</h2>
 						<p class="description">
 							Distinctively provide acces mutfuncto users whereas transparent
@@ -118,7 +118,7 @@ export default {
 	border-bottom: 1px solid #232a5c;
 
 	.section__title {
-		h3 {
+		h4 {
 			text-transform: uppercase;
 			color: #6f1951;
 		}
@@ -169,7 +169,7 @@ export default {
 		flex-direction: column;
 		gap: 5px;
 
-		h3 {
+		h4 {
 			text-transform: uppercase;
 			color: #6f1951;
 		}
