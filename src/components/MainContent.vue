@@ -2,12 +2,14 @@
 import HeroComponent from "../components/HeroComponent.vue";
 import SectionGameCollection from "../components/SectionGameCollection.vue";
 import SectionMatches from "../components/SectionMatches.vue";
+import SectionOurTeam from "../components/SectionOurTeam.vue";
 
 export default {
 	components: {
 		HeroComponent,
 		SectionGameCollection,
-    SectionMatches,
+		SectionMatches,
+		SectionOurTeam,
 	},
 	data() {
 		return {};
@@ -19,7 +21,8 @@ export default {
 	<main class="main__content">
 		<HeroComponent />
 		<SectionGameCollection />
-    <SectionMatches/>
+		<SectionMatches />
+		<SectionOurTeam />
 	</main>
 </template>
 
@@ -30,4 +33,6 @@ export default {
 	min-height: calc(100vh - 150px);
 	color: white;
 }
+
+
 </style>

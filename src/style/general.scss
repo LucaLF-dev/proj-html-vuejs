@@ -69,6 +69,7 @@ figure {
 	gap: 10px;
 	width: 95px;
 	height: 54px;
+	
 
 	&.white {
 		background-color: $white-color;
@@ -91,6 +92,7 @@ figure {
 	gap: 10px;
 	width: 204px;
 	height: 60px;
+	border-radius: 5px;
 
 	&.white {
 		background-color: $white-color;
@@ -102,5 +104,18 @@ figure {
 		background-color: $rose-color;
 		color: $white-color;
 		border-bottom: 1px solid $white-color;
+	}
+}
+
+.section__name {
+	h4 {
+		text-transform: uppercase;
+		color: #6f1951;
+		padding: 20px 0;
+	}
+	h2 {
+		text-transform: uppercase;
+		color: white;
+		font-size: 36px;
 	}
 }
