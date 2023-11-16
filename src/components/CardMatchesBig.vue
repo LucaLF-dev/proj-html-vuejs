@@ -27,7 +27,7 @@ export default {
 	<div class="card__matches-big">
 		<div class="row card__header">
 			<p class="col group__matches">
-				<span>{{ cardBig.group }}</span>
+				<span>{{cardBig.group  }}</span>
 				<span>{{  }}fff</span>
 			</p>
 			<p class="col matches__price-money">Price pool <span>{{ }}</span></p>
@@ -52,9 +52,9 @@ export default {
 				</div>
 			</div>
 			<div class="col teams__posters">
-				<img :src="CardMatchesBig.posterHomeTeam" alt="">
+				<img src="" alt="">
                 <img src="/public/vs.png" alt="">
-                <img :src="CardMatchesBig.posterAwayTeam" alt="">
+                <img src="" alt="">
 			</div>
 			<div class="match__streaming">
 				<ul>

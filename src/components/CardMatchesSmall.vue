@@ -51,7 +51,7 @@ export default {
 				</div>
 				<div class="match__streaming">
 					<ul>
-						<li v-for="stream in item.streams[currentindex]">
+						<li v-for="stream in item.streams">
 							<a href="#"><img :src="stream" alt="" /></a>
 						</li>
 					</ul>

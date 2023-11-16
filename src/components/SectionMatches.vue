@@ -174,7 +174,7 @@ export default {
 
 <style lang="scss" scoped>
 .matches__section {
-	background-color: black;
+background-image: url("../assets/sectionMatches.jpg");
 	height: 1040px;
 }
 
