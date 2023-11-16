@@ -120,7 +120,7 @@ export default {
 	.section__title {
 		h3 {
 			text-transform: uppercase;
-			color: #6F1951;
+			color: #6f1951;
 		}
 
 		h2 {
@@ -164,23 +164,21 @@ export default {
 	justify-content: center;
 	align-items: flex-start;
 
-    .card__intro {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+	.card__intro {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
 
-        h3 {
-            text-transform: uppercase;
-            color: #6F1951;
+		h3 {
+			text-transform: uppercase;
+			color: #6f1951;
+		}
 
-        }
-
-        h2 {
-            text-transform: uppercase;
-            font-size: 36px;
-        }
-
-    }
+		h2 {
+			text-transform: uppercase;
+			font-size: 36px;
+		}
+	}
 	.image__team-esport {
 		width: 550px;
 		height: 560px;
