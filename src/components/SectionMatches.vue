@@ -159,8 +159,10 @@ export default {
 							/>
 						</div>
 					</div>
+					
 				</div>
-			</div>
+				<div class="button-big white"><a href="#">BROWSE ALL MATCHES</a></div>
+			</div>	
 		</div>
 	</section>
 </template>
@@ -169,7 +171,7 @@ export default {
 .matches__section {
 	padding: 60px 0;
 	background-image: url("../assets/sectionMatches.jpg");
-	height: 1040px;
+
 	width: 100%;
 }
 
@@ -217,5 +219,9 @@ export default {
 		display: flex;
 		justify-content: space-around;
 	}
+}
+
+.button-big {
+	margin: 0 auto;
 }
 </style>
