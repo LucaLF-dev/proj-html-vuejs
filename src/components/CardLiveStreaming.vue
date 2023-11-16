@@ -1,31 +1,101 @@
 <script>
-
-
 export default {
-    props: {
+	props: {
 		item: {
 			type: Object,
 			required: true,
 		},
 	},
-	
+
 	data() {
-		return {
-           
-        };
+		return {};
 	},
 };
 </script>
 
 <template>
-    <div class="card__live-streaming" :style="{ backgroundImage: 'url(...)' }">
-        
-    </div>
-	
+	<div class="card__live-streaming" :style="item.url" :class="item.class">
+		<div class="wrapper-description">
+			<a class="button-streaming button-big rose" href="#"
+				><span>Watch now</span
+				><font-awesome-icon :icon="['fas', 'circle-play']"
+			/></a>
+			<h3 class="description">{{ item.description }}</h3>
+		</div>
+	</div>
 </template>
 
 <style lang="scss" scoped>
 @use "../style/partial/variables" as *;
 
+.card__live-streaming {
+	border-radius: 10px;
+	border: 7px solid #232a5c;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 
+	h3 {
+		text-transform: uppercase;
+	}
+
+	.wrapper-description {
+		position: absolute;
+
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+
+		z-index: 3;
+		backdrop-filter: blur(1 px);
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.7021183473389356) 23%,
+			rgba(0, 0, 0, 0.09147408963585435) 65%
+		);
+		.button-streaming {
+			position: relative;
+			bottom: 30px;
+			top: 260px;
+			left: 15px;
+		}
+
+		.description {
+			position: relative;
+			left: 15px;
+			top: 270px;
+		}
+	}
+
+	.button-streaming {
+		height: 40px;
+		width: 150px;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 12px;
+		border: none;
+	}
+}
+
+.grid-item1 {
+	grid-area: area1;
+}
+
+.grid-item2 {
+	grid-area: area2;
+}
+
+.grid-item3 {
+	grid-area: area3;
+}
+
+.grid-item4 {
+	grid-area: area4;
+}
+
+.grid-item5 {
+	grid-area: area5;
+}
 </style>
