@@ -46,7 +46,7 @@ export default {
 		<div class="container">
 			<div class="section__wrapper-collection">
 				<div class="section__title">
-					<h5>Today's</h5>
+					<h3>Today's</h3>
 					<h2 class="title__game-collection">our game collection</h2>
 				</div>
 				<div class="cards__team-wrapper">
@@ -70,9 +70,10 @@ export default {
 						<img src="public/01.png" alt="" />
 					</figure>
 				</div>
+
 				<div class="card team-easports">
 					<div class="card__intro">
-						<h5 class="">Who we are</h5>
+						<h3 class="">Who we are</h3>
 						<h2 class="card__title">we are professional team esport</h2>
 						<p class="description">
 							Distinctively provide acces mutfuncto users whereas transparent
@@ -116,18 +117,17 @@ export default {
 	row-gap: 20px;
 	border-bottom: 1px solid #232a5c;
 
-    .section__title {
+	.section__title {
+		h3 {
+			text-transform: uppercase;
+			color: #6F1951;
+		}
 
-        h5 {
-            text-transform: uppercase;
-            color: #ff0052;
-        }
-
-        h2 {
-            font-size: 32px ;
-            text-transform: uppercase;
-        }
-    }
+		h2 {
+			font-size: 36px;
+			text-transform: uppercase;
+		}
+	}
 }
 .cards__team-wrapper {
 	display: flex;
@@ -163,6 +163,24 @@ export default {
 	gap: 40px;
 	justify-content: center;
 	align-items: flex-start;
+
+    .card__intro {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        h3 {
+            text-transform: uppercase;
+            color: #6F1951;
+
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 36px;
+        }
+
+    }
 	.image__team-esport {
 		width: 550px;
 		height: 560px;
