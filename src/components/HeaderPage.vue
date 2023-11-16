@@ -119,6 +119,8 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
   justify-content: space-between;
    
   .contacts__info{
+    border: 1px solid white;
+  
     
     ul {
       display: flex;

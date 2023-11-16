@@ -1,9 +1,10 @@
 <script >
 import HeroComponent from '../components/HeroComponent.vue';
-  
+import SectionGameCollection from '../components/SectionGameCollection.vue';
+
   export default {
     components: {
-     HeroComponent,
+     HeroComponent,SectionGameCollection,
 
     },
     data() {
@@ -17,6 +18,7 @@ import HeroComponent from '../components/HeroComponent.vue';
 <template>
  <main class="main__content">
    <HeroComponent/>
+   <SectionGameCollection/>
  </main>
   
 </template>
