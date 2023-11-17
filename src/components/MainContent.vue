@@ -6,6 +6,7 @@ import SectionOurTeam from "../components/SectionOurTeam.vue";
 import SectionLiveStreaming from "../components/SectionLiveStreaming.vue";
 import SectionProducts from "../components/section products/SectionProducts.vue";
 import SectionBlog from "./section blog/SectionBlog.vue";
+import SectionTestimonial from "./section testimonial/SectionTestimonial.vue";
 
 export default {
 	components: {
@@ -16,6 +17,7 @@ export default {
 		SectionLiveStreaming,
 		SectionProducts,
 		SectionBlog,
+		SectionTestimonial,
 	},
 	data() {
 		return {};
@@ -32,6 +34,7 @@ export default {
 		<SectionLiveStreaming/>
 		<SectionProducts/>
 		<SectionBlog/>
+		<SectionTestimonial/>
 	</main>
 </template>
 
