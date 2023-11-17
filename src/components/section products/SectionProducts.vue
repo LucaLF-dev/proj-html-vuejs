@@ -11,22 +11,22 @@ export default {
 		return {
 			productsCard: [
 				{
-					imgProduct: "../assets/02 (1).jpg",
+					imgProduct: "src/assets/Tshirt.jpg",
 					nameProduct: "black T-shirt here",
 					price: "$380.00",
 				},
 				{
-					imgProduct: "../assets/02 (1).jpg",
+					imgProduct: "src/assets/Tshirt.jpg",
 					nameProduct: "green T-shirt here",
 					price: "$380.00",
 				},
 				{
-					imgProduct: "../assets/02 (1).jpg",
+					imgProduct: "src/assets/Tshirt.jpg",
 					nameProduct: "Yellow T-shirt here",
 					price: "$380.00",
 				},
 				{
-					imgProduct: "../assets/02 (1).jpg",
+					imgProduct: "src/assets/Tshirt.jpg",
 					nameProduct: "Blue T-shirt here",
 					price: "$380.00",
 				},
@@ -42,10 +42,11 @@ export default {
 			<div class="section__name">
 				<h4>Gamer t-shirt's</h4>
 				<h2 class="section-title">explore our products</h2>
+			</div>
 				<div class="grid"> 
                     <CardTshirt v-for="product in productsCard" :key="product" :item="product"/>
                 </div>
-			</div>
+			
 		</div>
 		<div class="container partners">
 			<div class="section__name">
@@ -82,6 +83,7 @@ export default {
 }
 
 .section__name {
+	padding-bottom: 30px;
 	text-align: center;
 }
 </style>

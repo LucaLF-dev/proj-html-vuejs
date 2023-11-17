@@ -16,7 +16,7 @@ export default {
 	<div class="card__partners">
         <div class="container">
         <figure class="partner__logo">
-            <img :src="item.imgSquad" alt="squad-logo" />
+            <img src="" alt="" />
         </figure>
     </div>
 	</div>
