@@ -13,17 +13,23 @@ export default {
 </script>
 
 <template>
-	<div class="card__partners">
+	<div class="card__partner">
         <div class="container">
         <figure class="partner__logo">
-            <img src="" alt="" />
+            <img :src="item.imgPartner" alt="" />
         </figure>
     </div>
 	</div>
 </template>
 
 <style lang="scss" scoped>
+.card__partner {
+    
 
-
+	.partner__logo {
+		width: 105px;
+		aspect-ratio: 1;
+	} 
+}
 
 </style>
