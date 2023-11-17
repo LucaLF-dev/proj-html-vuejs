@@ -2,10 +2,11 @@
 import CardCompany from "../footer page/CardCompany.vue";
 import CardTopJackpot from "../footer page/CardTopJackpot.vue";
 import CardNewsLetter from "../footer page/CardNewsLetter.vue";
+import FooterCopyrightPage from "../footer page/FooterCopyrightPage.vue";
 
 export default {
     components:{
-        CardCompany,CardTopJackpot,CardNewsLetter,
+        CardCompany,CardTopJackpot,CardNewsLetter,FooterCopyrightPage,
     },
 	data() {
 		return {
@@ -52,6 +53,7 @@ export default {
             </div>
         </div>
     </footer>
+    <FooterCopyrightPage/>
 </template>
 
 <style lang="scss" scoped>
