@@ -1,10 +1,11 @@
 <script>
 import CardCompany from "../footer page/CardCompany.vue";
 import CardTopJackpot from "../footer page/CardTopJackpot.vue";
+import CardNewsLetter from "../footer page/CardNewsLetter.vue";
 
 export default {
     components:{
-        CardCompany,CardTopJackpot,
+        CardCompany,CardTopJackpot,CardNewsLetter,
     },
 	data() {
 		return {
@@ -47,17 +48,7 @@ export default {
             <div class="row  cards__footer">
                 <CardCompany :item="companyCard"/>
                 <CardTopJackpot />
-                <div class="card__newsletter">
-                    <div class="newsletter__header" >
-                        <h4>our newsletter</h4> 
-                        <p>gamer esports organization supported by community leaders</p>
-                    </div>
-                    <div class="newsletter__body">
-                        <input type="text" placeholder=" Your Name ">
-                        <input type="text" placeholder=" Your Email">
-                        <a class="button-big white" hre="#"><span>Send message</span></a>
-                    </div>
-                </div>
+                <CardNewsLetter/>
             </div>
         </div>
     </footer>
@@ -95,8 +86,5 @@ export default {
         justify-items: center;
     }
 
-    .card__newsletter {
-        padding-top: 10px;
-    }
 }
 </style>
