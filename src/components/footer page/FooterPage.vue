@@ -21,8 +21,8 @@ export default {
 					detail: "Address : 30 North West New York 240",
 				},
 			],
-            companyCard: [
-                {   logo:"public/logo.png",
+            companyCard: {
+                   logo:"public/logo.png",
                     description:"Upropriate brand ecomca soud techolog after covalent technology enable prospective wastng markets whereas propriate and brand economca sound technolog",
                     platforms: [
 						{platform:"public/social-1.png"},
@@ -30,9 +30,9 @@ export default {
 						{platform: "public/social-3.png"},
 
 					],
-                }
-            ],
-            jackPotGames: [
+            },
+            
+            jackpotGames: [
                 {
                     img:"public/footer-jackpotgames.jpg",
                     title:"free poker game",
@@ -60,8 +60,8 @@ export default {
             <div class="detail__card" v-for="information in companyInformations" :key="information "><img src="" alt=""><span>{{ information.detail }}</span></div>
         </div>
         <div class="container">
-            <div class="row">
-                <CardCompany/>
+            <div class="row  cards__footer">
+                <CardCompany :item="companyCard"/>
                 <CardTopJackpot/>
                 <div class="card__newsletter">
                     <div class="newsletter__header" >
@@ -101,6 +101,11 @@ export default {
            border: 1px solid white;
            border-top: none;
        }
+    }
+    .cards__footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
     }
 }
 </style>

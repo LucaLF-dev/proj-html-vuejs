@@ -22,7 +22,7 @@ export default {
 @use "src/style/partial/_variables.scss" as *;
 .card__top-jackpot{
 	
-	width: 530px;
+
     
 	padding: 10px;
 }
