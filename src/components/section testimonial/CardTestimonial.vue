@@ -19,7 +19,7 @@ export default {
 				<figure>
 					<img :src="item.imgProfile" alt="" />
 				</figure>
-				<div>
+				<div class=" profile--description ">
 					<h4 class="profile__name">{{ item.name }}</h4>
 					<h6 class="profile__job">{{ item.job }}</h6>
 				</div>
@@ -61,9 +61,12 @@ export default {
 
             h4 {
 			text-transform: uppercase;
+
+			
 		}
 		h6 {
 			font-weight: 300;
+			text-align: left;
 		}
 		figure {
 			border-radius: 100%;

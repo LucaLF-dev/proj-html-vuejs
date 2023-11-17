@@ -148,11 +148,11 @@ background: linear-gradient(180deg, rgba(19,22,97,0.8589810924369747) 13%, rgba(
 			display: flex;
 			gap: 20px;
 	
-			border-bottom: 1px solid white;
+			border-bottom: 1px solid  #232a5c;
 
 			.info__telephone {
 				padding: 15px;
-        position: relative;
+               position: relative;
 
 				&::before {
 					content: "";
@@ -163,7 +163,7 @@ background: linear-gradient(180deg, rgba(19,22,97,0.8589810924369747) 13%, rgba(
 					left: -13px;
 					bottom: 6px;
 					top: -3px;
-					background-color: white;
+					background-color:  #232a5c;
 				}
 			}
 
@@ -180,7 +180,7 @@ background: linear-gradient(180deg, rgba(19,22,97,0.8589810924369747) 13%, rgba(
 					left: -13px;
 					bottom: 6px;
 					top: -3px;
-					background-color: white;
+					background-color:  #232a5c;
 				}
 				
 			}
@@ -194,7 +194,7 @@ background: linear-gradient(180deg, rgba(19,22,97,0.8589810924369747) 13%, rgba(
 			display: flex;
 			justify-content: space-around;
 			gap: 20px;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid  #232a5c;
       position: relative;
 
       &::before {
@@ -207,7 +207,7 @@ background: linear-gradient(180deg, rgba(19,22,97,0.8589810924369747) 13%, rgba(
           
 					
 					
-					background-color: white;
+					background-color:  #232a5c;
         }
 
       .info__social {
@@ -223,7 +223,7 @@ background: linear-gradient(180deg, rgba(19,22,97,0.8589810924369747) 13%, rgba(
           left: 56px;
 					bottom: 6px;
 					top: -3px;
-					background-color: white;
+					background-color: #232a5c;
         }
 
         

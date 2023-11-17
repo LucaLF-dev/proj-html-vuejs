@@ -42,9 +42,11 @@ export default {
 
 <template>
 	<footer class="page__footer">
+        <div class="container-jumbo">
         <div class="container information__detail">
             <div class="detail__card" v-for="information in companyInformations" :key="information "><img src="" alt=""><span>{{ information.detail }}</span></div>
         </div>
+    </div>
         <div class="container">
             <div class="row  cards__footer">
                 <CardCompany :item="companyCard"/>
@@ -67,8 +69,13 @@ export default {
     background-position: center;
 }
 
+.container-jumbo {
+
+    border-bottom: 1px solid  #232a5c;
+   
+}
 .container {
-    padding-bottom: 50px;
+   
     &.information__detail {
         
         display: flex;
@@ -77,8 +84,12 @@ export default {
         
        .detail__card {
            padding: 20px;
-           border: 1px solid white;
+           border: 1px solid  #232a5c;
            border-top: none;
+           border-bottom: none;
+           position: relative;
+
+           
        }
     }
     .cards__footer {
