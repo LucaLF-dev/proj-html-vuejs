@@ -32,23 +32,7 @@ export default {
 					],
             },
             
-            jackpotGames: [
-                {
-                    img:"public/footer-jackpotgames.jpg",
-                    title:"free poker game",
-                    price:"$230",
-                },
-                {
-                    img:"public/footer-jackpotgames.jpg",
-                    title:"club poker game",
-                    price:"$290",
-                },
-                {
-                    img:"public/footer-jackpotgames.jpg",
-                    title:"royal poker game",
-                    price:"$330",
-                },
-            ],
+            
 		};
 	},
 };
@@ -62,11 +46,11 @@ export default {
         <div class="container">
             <div class="row  cards__footer">
                 <CardCompany :item="companyCard"/>
-                <CardTopJackpot/>
+                <CardTopJackpot />
                 <div class="card__newsletter">
                     <div class="newsletter__header" >
-                        <h4></h4> 
-                        <p></p>
+                        <h4>our newsletter</h4> 
+                        <p>gamer esports organization supported by community leaders</p>
                     </div>
                     <div class="newsletter__body">
                         <input type="text" placeholder=" Your Name ">
@@ -103,9 +87,16 @@ export default {
        }
     }
     .cards__footer {
+        padding-top: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
+        
+        justify-items: center;
+    }
+
+    .card__newsletter {
+        padding-top: 10px;
     }
 }
 </style>
