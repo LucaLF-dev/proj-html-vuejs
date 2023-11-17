@@ -35,7 +35,7 @@ export default {
 .squad-players {
     width: 336px ;
     height: 556px;
-    background-image: url("../assets/5.jpg");
+    background-image: url("src/assets/5.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

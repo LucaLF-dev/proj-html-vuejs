@@ -72,6 +72,7 @@ export default {
 .card__matches-small {
     width: 542px;
 	max-width: 542px;
+	padding: 10px;
 
     
     

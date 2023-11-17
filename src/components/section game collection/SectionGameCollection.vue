@@ -135,6 +135,7 @@ export default {
 	gap: 12px;
 	padding-top: 38px;
 	padding-bottom: 64px;
+	
 
 	.team__card {
 		background-color: #232a5c;
@@ -144,6 +145,11 @@ export default {
 		gap: 8px;
 		width: 358px;
 		height: 226px;
+		border-radius: 8px;
+		-webkit-box-shadow: 0px 24px 7px -10px rgba(109, 113, 158, 1);
+-moz-box-shadow: 0px 24px 7px -10px rgba(109, 113, 158, 1);
+box-shadow: 0px 24px 7px -10px rgba(109, 113, 158, 1);
+		
 
 		.team__image {
 			width: 88px;

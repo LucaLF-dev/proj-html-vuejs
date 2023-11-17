@@ -71,6 +71,7 @@ export default {
 	width: 1132px;
 	height: 206px;
     color: black;
+	padding: 10px;
 
 	.card__header {
         padding: 5px;

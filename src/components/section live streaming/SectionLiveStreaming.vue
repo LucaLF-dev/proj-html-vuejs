@@ -14,22 +14,22 @@ export default {
                 description:"2022 lvp superliga orange summer"
             },
             {
-                url:'background-image: url(public/01.jpg);' ,
+                url:'background-image: url(public/img_177111_popularstreamer.jpg);' ,
                 class: 'grid-item2',
                 description:"pubg classic tournament."
             },
             {
-                url: 'background-image: url(public/01.jpg);',
+                url: 'background-image: url(public/istockphoto-1334436084-612x612.jpg);',
                 class: 'grid-item3',
                 description:"can i add my local bank..."
             },
             {
-                url: 'background-image: url(public/01.jpg);',
+                url: 'background-image: url(public/The-Reign-of-the-Part-Time-Twitch-Streamer-Games-GettyImages-1404708615.webp);',
                 class: 'grid-item4',
                 description:"league battle tournament."
             },
             {
-                url: 'background-image: url(public/01.jpg);',
+                url: 'background-image: url(public/tyler-ninja-blevins.webp);',
                 class: 'grid-item5',
                 description:"where can i redeem my.."
             },
@@ -62,10 +62,11 @@ export default {
 .section__live-streaming {
     width: 100%;
     height: 1040px;
-    background-image: url("../assets/bg (3).jpg");
+    background-image: url("src/assets/bg (3).jpg");
 
     .section__name {
         text-align: center;
+        padding: 50px;
     }
 
     .grid-container {

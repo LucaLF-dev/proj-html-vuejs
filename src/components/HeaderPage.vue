@@ -126,14 +126,15 @@ export default {
 <style lang="scss" scoped>
 .main__header {
 	width: 100%;
-	height: 155px;
+
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	z-index: 999;
 	margin: 0;
-	backdrop-filter: blur(5px);
+	background: rgb(19,22,97);
+background: linear-gradient(180deg, rgba(19,22,97,0.8589810924369747) 13%, rgba(19,22,97,0.49763655462184875) 78%);
 }
 
 .nav__contacts {
@@ -249,7 +250,8 @@ export default {
 
 .nav__account {
 	display: flex;
-	align-items: center;
+  align-items: center;
+ 
 }
 
 .logo__image {

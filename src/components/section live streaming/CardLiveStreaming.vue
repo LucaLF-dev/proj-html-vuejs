@@ -22,6 +22,7 @@ export default {
 			/></a>
 			<h3 class="description">{{ item.description }}</h3>
 		</div>
+		<a class="press__play" href="#"><font-awesome-icon class="play__button" :icon="['fas', 'circle-play']"></font-awesome-icon></a>
 	</div>
 </template>
 
@@ -33,7 +34,11 @@ export default {
 	border: 7px solid #232a5c;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	h3 {
 		text-transform: uppercase;
@@ -79,6 +84,26 @@ export default {
 	}
 }
 
+.press__play {
+	
+	width: 131px;
+	aspect-ratio: 1;
+	border-radius: 100%;
+	background-color: rgba(255,255,255,0.25);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 800;
+	
+	.play__button {
+		background-color: $rose-color;
+		border-radius: 100%;
+		font-size: 40px;
+		color: white;
+		z-index: 999;
+	}
+	
+}
 .grid-item1 {
 	grid-area: area1;
 }

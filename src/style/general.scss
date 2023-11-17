@@ -67,7 +67,7 @@ figure {
 	align-items: center;
 	text-transform: uppercase;
 	gap: 10px;
-	width: 95px;
+	width: 120px;
 	height: 54px;
 	
 
@@ -75,6 +75,7 @@ figure {
 		background-color: $white-color;
 		color: $rose-color;
 		border-bottom: 1px solid $rose-color;
+		
 	}
 
 	&.rose {

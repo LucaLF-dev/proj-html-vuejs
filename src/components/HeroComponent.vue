@@ -40,7 +40,7 @@
  }
 
  .row {
-  padding-top: 90px;
+  padding-top: 190px;
 
  .card {
 
@@ -49,6 +49,7 @@
   flex-direction: column;
   gap: 10px;
   padding: 10px;
+  
 
   .card-title {
     font-size: 76px;

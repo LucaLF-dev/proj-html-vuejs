@@ -23,7 +23,7 @@ export default {
 
         </div>
         <div class="col">
-            <img class="image_players" src="../assets/01 (1).png" alt="">
+            <img class="image_players" src="src/assets/01 (1).png" alt="">
         </div>
     </div>
     </div>
@@ -33,7 +33,7 @@ export default {
 @use "src/style/partial/_variables.scss" as *;
 
 .card__join-community {
-    background-image: url("../assets/bg (4).jpg");
+    background-image: url("src/assets/bg (4).jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

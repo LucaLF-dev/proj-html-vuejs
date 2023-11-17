@@ -141,7 +141,7 @@ export default {
 
 				<div class="row matches-insight">
 					
-					<div class="col upcoming-matches">
+					<div class=" upcoming-matches">
 						<h3>upcoming Matches</h3>
 						<div class="insight__body">
 							<CardMatchesSmall
@@ -150,7 +150,7 @@ export default {
 							/>
 						</div>
 					</div>
-					<div class="col upcoming-matches">
+					<div class=" upcoming-matches">
 						<h3>previous matches</h3>
 						<div class="insight__body">
 							<CardMatchesSmall
@@ -170,7 +170,7 @@ export default {
 <style lang="scss" scoped>
 .matches__section {
 	padding: 60px 0;
-	background-image: url("../assets/sectionMatches.jpg");
+	background-image: url("src/assets/sectionMatches.jpg");
 
 	width: 100%;
 }
@@ -215,12 +215,16 @@ export default {
 		padding-bottom: 15px;
 	}
 	gap: 20px;
-	.insight__header {
-		display: flex;
-		justify-content: space-around;
-	}
+	
 }
 
+.upcoming-matches {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	
+	
+}
 .button-big {
 	margin: 0 auto;
 }
