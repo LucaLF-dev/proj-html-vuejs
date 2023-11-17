@@ -27,7 +27,7 @@ export default {
     
 
 	.partner__logo {
-		width: 105px;
+		width: 50px;
 		aspect-ratio: 1;
 	} 
 }
