@@ -4,7 +4,8 @@ import SectionGameCollection from "../components/SectionGameCollection.vue";
 import SectionMatches from "../components/SectionMatches.vue";
 import SectionOurTeam from "../components/SectionOurTeam.vue";
 import SectionLiveStreaming from "../components/SectionLiveStreaming.vue";
-import sectionProducts from "./section products/sectionProducts.vue";
+import SectionProducts from "../components/section products/SectionProducts.vue";
+import SectionBlog from "./section blog/SectionBlog.vue";
 
 export default {
 	components: {
@@ -13,7 +14,8 @@ export default {
 		SectionMatches,
 		SectionOurTeam,
 		SectionLiveStreaming,
-		sectionProducts,
+		SectionProducts,
+		SectionBlog,
 	},
 	data() {
 		return {};
@@ -28,7 +30,8 @@ export default {
 		<SectionMatches />
 		<SectionOurTeam />
 		<SectionLiveStreaming/>
-		<sectionProducts/>
+		<SectionProducts/>
+		<SectionBlog/>
 	</main>
 </template>
 
