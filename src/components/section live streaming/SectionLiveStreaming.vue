@@ -1,5 +1,5 @@
 <script>
-import CardLiveStreaming from '../components/CardLiveStreaming.vue';
+import CardLiveStreaming from './CardLiveStreaming.vue';
 
 export default {
 	components: {
@@ -57,7 +57,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partial/variables" as *;
+@use "src/style/partial/_variables.scss" as *;
 
 .section__live-streaming {
     width: 100%;

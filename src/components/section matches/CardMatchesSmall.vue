@@ -68,7 +68,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partial/variables" as *;
+@use "src/style/partial/_variables.scss" as *;
 .card__matches-small {
     width: 542px;
 	max-width: 542px;

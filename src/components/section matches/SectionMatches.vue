@@ -1,6 +1,6 @@
 <script>
-import CardMatchesBig from "../components/CardMatchesBig.vue";
-import CardMatchesSmall from "../components/CardMatchesSmall.vue";
+import CardMatchesBig from "./CardMatchesBig.vue";
+import CardMatchesSmall from "./CardMatchesSmall.vue";
 
 export default {
 	components: {

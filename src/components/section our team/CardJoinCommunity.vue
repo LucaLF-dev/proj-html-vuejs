@@ -30,7 +30,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partial/variables" as *;
+@use "src/style/partial/_variables.scss" as *;
 
 .card__join-community {
     background-image: url("../assets/bg (4).jpg");

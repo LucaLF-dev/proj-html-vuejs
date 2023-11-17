@@ -30,7 +30,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partial/variables" as *;
+@use "src/style/partial/_variables.scss" as *;
 
 .squad-players {
     width: 336px ;

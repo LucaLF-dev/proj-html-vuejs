@@ -1,6 +1,6 @@
 <script>
-import CardSquad from "../components/CardSquad.vue";
-import CardJoinCommunity from "../components/CardJoinCommunity.vue";
+import CardSquad from "./CardSquad.vue";
+import CardJoinCommunity from "./CardJoinCommunity.vue";
 
 export default {
 	components: {
@@ -88,7 +88,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partial/variables" as *;
+@use "src/style/partial/_variables.scss" as *;
 
 .section__our-team {
 	background-color: #090E38;

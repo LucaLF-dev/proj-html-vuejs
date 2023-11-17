@@ -66,7 +66,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+@use "src/style/partial/_variables.scss" as *;
 .card__matches-big {
 	width: 1132px;
 	height: 206px;

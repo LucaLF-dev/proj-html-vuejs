@@ -10,7 +10,9 @@ export default {
 		FooterPage,
 	},
 	data() {
-		return {};
+		return {
+			
+		};
 	},
 };
 </script>
