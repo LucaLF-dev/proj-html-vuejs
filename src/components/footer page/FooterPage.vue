@@ -58,7 +58,7 @@ export default {
 
 .page__footer {
     width: 100%;
-    height: 1000px;
+  
     background-image: url('public/bg-footer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,9 +66,11 @@ export default {
 }
 
 .container {
+    padding-bottom: 50px;
     &.information__detail {
         
         display: flex;
+        justify-content: center;
         flex-direction: row;
         
        .detail__card {
