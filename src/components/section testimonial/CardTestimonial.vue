@@ -14,6 +14,27 @@ export default {
 
 <template>
 	<div class="card__testimonial">
+        <div class="row">
+            <div class="profile">
+                <figure>
+                    <img src="" alt="">
+                </figure>
+                <div>
+                    <h4 class="profile__name"></h4>
+                    <h6 class="profile__job"></h6>
+                </div>
+                <div class="profile__logo-team">
+                     <img src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="profile__description"></p>
+            <ul class="vote-star">
+                <li></li>
+            </ul>
+            <span class="vote"></span>
+        </div>
 		
 	</div>
 </template>
