@@ -1,8 +1,8 @@
 <script>
-import WidgetCompany from "../footer page/WidgetCompany.vue";
-import WidgetTopJackpot from "../footer page/WidgetTopJackpot.vue";
-import WidgetNewsLetter from "../footer page/WidgetNewsLetter.vue";
-import FooterCopyrightPage from "../footer page/FooterCopyrightPage.vue";
+import WidgetCompany from "../FooterPage/WidgetCompany.vue";
+import WidgetTopJackpot from "../FooterPage/WidgetTopJackpot.vue";
+import WidgetNewsLetter from "../FooterPage/WidgetNewsLetter.vue";
+import FooterCopyrightPage from "../FooterPage/FooterCopyrightPage.vue";
 export default {
     components:{
         WidgetCompany,WidgetTopJackpot,WidgetNewsLetter,FooterCopyrightPage,

@@ -1,5 +1,5 @@
 <script>
-import CardBlog from '../section blog/CardBlog.vue';
+import CardBlog from '../SectionBlog/CardBlog.vue';
 
 export default {
 	components: {

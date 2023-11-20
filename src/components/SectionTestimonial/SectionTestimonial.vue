@@ -1,5 +1,5 @@
 <script>
-import CardTestimonial from "../section testimonial/CardTestimonial.vue";
+import CardTestimonial from "../SectionTestimonial/CardTestimonial.vue";
 
 export default {
 	components: {

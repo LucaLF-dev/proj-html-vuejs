@@ -1,6 +1,6 @@
 <script>
-import CardTshirt from "../section products/CardTshirt.vue";
-import CardPartner from "../section products/CardPartner.vue";
+import CardTshirt from "../SEctionProducts/CardTshirt.vue";
+import CardPartner from "../SEctionProducts/CardPartner.vue";
 
 export default {
 	components: {
