@@ -1,12 +1,11 @@
 <script>
-import CardCompany from "../footer page/CardCompany.vue";
-import CardTopJackpot from "../footer page/CardTopJackpot.vue";
-import CardNewsLetter from "../footer page/CardNewsLetter.vue";
+import WidgetCompany from "../footer page/WidgetCompany.vue";
+import WidgetTopJackpot from "../footer page/WidgetTopJackpot.vue";
+import WidgetNewsLetter from "../footer page/WidgetNewsLetter.vue";
 import FooterCopyrightPage from "../footer page/FooterCopyrightPage.vue";
-
 export default {
     components:{
-        CardCompany,CardTopJackpot,CardNewsLetter,FooterCopyrightPage,
+        WidgetCompany,WidgetTopJackpot,WidgetNewsLetter,FooterCopyrightPage,
     },
 	data() {
 		return {
@@ -49,9 +48,9 @@ export default {
     </div>
         <div class="container">
             <div class="row  cards__footer">
-                <CardCompany :item="companyCard"/>
-                <CardTopJackpot />
-                <CardNewsLetter/>
+                <WidgetCompany :item="companyCard"/>
+                <WidgetTopJackpot />
+                <WidgetNewsLetter/>
             </div>
         </div>
     </footer>

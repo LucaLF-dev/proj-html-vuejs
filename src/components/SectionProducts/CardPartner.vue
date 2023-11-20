@@ -16,7 +16,7 @@ export default {
 	<div class="card__partner">
         <div class="container">
         <figure class="partner__logo">
-            <img :src="item.imgPartner" alt="" />
+            <img :src="item.imgPartner" alt="poster-partner" />
         </figure>
     </div>
 	</div>
